@@ -1,0 +1,11 @@
+{
+  "name": "test1234",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alphaolomi/test1234.git",
+  "author": "Alpha Olomi <alphaolomi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
