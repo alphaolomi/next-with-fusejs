@@ -1,11 +1,27 @@
 {
-  "name": "test1234",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/alphaolomi/test1234.git",
-  "author": "Alpha Olomi <alphaolomi@gmail.com>",
+  "name": "next-fusejs",
+  "description": "Nextjs(React) with Fuse.js demo",
   "license": "MIT",
+  "author": "Alpha Olomi <hello@alphaolomi.com>",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "fuse.js": "^6.4.6",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.15",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.0.1",
+    "typescript": "4.3.5"
   }
 }
