@@ -1,19 +1,22 @@
+/* eslint-disable react/display-name */
 import dynamic from "next/dynamic";
 import PageLayout from "@/layouts/PageLayout";
+import Loading from "@/components/Loading";
 
-const DynamicComponentWithCustomLoading = dynamic(() => import("@/components/Search"), {
-  loading: () => <p>Loading...</p>,
+// DynamicComponentWithCustomLoading
+const SearchPageComponent = dynamic(() => import("@/components/Search"), {
+  loading: () => <Loading />,
 });
 
-// import Search from "@/components/Search";
+
 
 const Home: React.FC = () => {
   return (
     <>
       <PageLayout>
         <h1>React With Fuse Demo</h1>
-        {/* <Search /> */}
-        <DynamicComponentWithCustomLoading />
+
+        <SearchPageComponent />
       </PageLayout>
     </>
   );
